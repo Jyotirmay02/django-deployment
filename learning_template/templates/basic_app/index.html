@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+
+    <!-- same block name provided in the base.html should pass here -->
+    {% block body_block%}  
+        <h1>WELCOME TO INDEX</h1>
+        <!-- <h2> This is an example of template inheritance</h2> -->
+        
+        <h2>{{ text }}</h2>
+        <!-- If i want to uppercase all the char in text -->
+        <h2>{{ text | upper }}</h2>
+
+        <!-- Using custom filters  cutting the word hello -->
+        <h2>{{ text | cut:'Hello' }}</h2>
+    
+        <h3>{{ number }}</h3>
+        <!-- Add a number -->
+        <h3>{{ number | add:"89"}}</h3>
+
+    {% endblock %}

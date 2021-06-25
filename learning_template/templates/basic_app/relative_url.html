@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Jyotirmay </title>
+    </head>
+
+    <body>
+        <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+
+        <!-- Normal Method -->
+        <!-- <a href="basic_app/other.html"> Link to Other Page</a> -->
+        
+        <a href="{% url  'basic_app:other' %}"> Link to other</a>
+        <!-- basic_app comes from the app_name value in urls.py file and other is the defination name of other page -->
+        
+        <a href="{% url 'admin:index' %}">Admin</a>
+        
+    </body>
+
+</html>
